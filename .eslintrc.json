@@ -1,5 +1,10 @@
 {
   "extends": [
     "next/core-web-vitals" // Add "prettier" last. This will turn off eslint rules conflicting with prettier. This is not what formats the code.
-  ]
+  ],
+  "rules": {
+    "@typescript-eslint/no-explicit-any": "off",
+    "@next/next/no-img-element": "off",
+    "react-hooks/exhaustive-deps": "off"
+  }
 }

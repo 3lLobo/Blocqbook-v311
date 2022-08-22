@@ -1,4 +1,4 @@
-const withOptimizedImages = require('next-optimized-images')
+// const withOptimizedImages = require('next-optimized-images')
 
 const nextConfig = {
   reactStrictMode: true,
@@ -23,4 +23,4 @@ const nextConfig = {
   },
 }
 
-module.exports = withOptimizedImages(nextConfig)
+module.exports = nextConfig
