@@ -66,7 +66,7 @@ Through all their perks, we could not yet find a way to decentralize a secure ba
 Storing wallet keys on a static website would open the door for malicious actors to abuse both the storage and public tagging system.
 In necessity of a secure backend, we turned to AWS where the Blocq☎️book API is deployed.
 
-Being thankful implies having successfully surpassed a challenge, thus with this metaphors in mind we would like to round up this hackathon with a big **ThankYou** to the the generous sponsors IPFS, AWS and Polygon 💜  
+Being thankful implies having successfully surpassed a challenge, thus with this metaphor in mind we would like to round up this hackathon with a big **ThankYou** to the the generous sponsors IPFS, AWS and Polygon 💜  
 
 
 ![bbbye](/public/logov2/booqName/blocqbookN.png)
