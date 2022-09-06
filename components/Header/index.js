@@ -1,5 +1,6 @@
 // import { Disclosure } from '@chakra-ui/react'
 import { ColorModeToggle } from './colorModeToggle'
+// import Image from 'next/image'
 import { motion } from 'framer-motion'
 import { MyButton } from '../Buttons/MyButton'
 import { useCallback, useRef, useState, useEffect } from 'react'
@@ -137,12 +138,7 @@ export default function Header() {
             >
               {!store.connected && (
                 <div className="relative flex col-span-1 h-6 w-6 rounded-full ml-1">
-                  <img 
-                  alt="metamask" 
-                  // layout="fill" 
-                  src={"./metamask.png"}
-                  // src={require("./metamask.png")}
-                  />
+                  <img alt="metamask" layout="fill" src="/metamask.png" />
                 </div>
               )}
             </MyButton>
@@ -156,11 +152,11 @@ export default function Header() {
                 hidden: { opacity: 0, x: -500 },
               }}
               title={store.account}
-              className="ml-3 mr-auto px-2 py-1 bg-indigo-500 bg-opacity-80 rounded-tr-xl rounded-bl-xl text-snow text-xs hover:text-snow-muted hover:bg-indigo-600 transition-colors duration-300 truncate"
+              className="hidden md:flex ml-3 mr-auto px-2 py-1 bg-indigo-500 bg-opacity-80 rounded-tr-xl rounded-bl-xl text-snow text-xs hover:text-snow-muted hover:bg-indigo-600 transition-colors duration-300 truncate"
             >
               {store.account}
             </motion.div>
-            <div className="sm:inset-auto sm:ml-6 flex gap-2">
+            <div className="sm:inset-auto sm:ml-6 flex gap-2 ml-32 ">
               <ColorModeToggle />
             </div>
           </div>

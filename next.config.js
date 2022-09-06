@@ -1,6 +1,11 @@
-// const withOptimizedImages = require('next-optimized-images')
-
+/** @type {import('next').NextConfig} */
 const nextConfig = {
+  compilerOptions: {
+    baseUrl: '.',
+    paths: {
+      '@/components/*': ['components/*'],
+    },
+  },
   reactStrictMode: true,
   images: {
     domains: [

@@ -11,7 +11,6 @@ import axios from 'axios'
 import { usePublicTags } from '../../hooks/usePublicTags'
 import { v4 } from 'uuid'
 
-
 const apiKey = process.env.NEXT_PUBLIC_AWS_API
 
 // Call the tag-api to call the contract and submit the tag+target-address to the blockchain and theGraph.

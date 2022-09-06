@@ -19,6 +19,9 @@ TL;DR: The Blocq☎️book:
     2. File storage and  `#W3btransition`
     3. transfer with 1TB soft limit 🧑🏾‍🚀 `#W3btransition`
 
+IPFS/Spheron dcntrlzd app: https://polygonbuidl-y8q1s2.spheron.app/
+Centralized (fallbacq): https://blocqbook.netlify.app/
+
 ## A booq, What is that even?
 
 <!-- img grandpa avatar -->

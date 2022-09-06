@@ -9,6 +9,7 @@ import { PubTags } from './PubTags'
 import { useDispatch, useSelector } from 'react-redux'
 import { updateContact } from '../../app/contactSlice'
 import { PoapAvatar } from '../Poap'
+// import Image from 'next/image'
 import { useCommonPoap } from '../../hooks/useCommonPoap'
 import { uploadImage } from '../../lib/uploadToWeb3Storage'
 
@@ -97,8 +98,8 @@ const ProfileCard = ({ profile }) => {
           <div className="relative ml-2 h-16 scale-300 mb-11 aspect-1 dark:hue-rotate-180 dark:invert ">
             <img
               className=""
-              src={"./poap-badge.png"}
-              // src={require("./poap-badge.png")}
+              layout="fill"
+              src="/poap-badge.png"
               alt="poapbadge"
             />
           </div>
