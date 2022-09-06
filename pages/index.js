@@ -7,9 +7,7 @@ export default function Home() {
   const store = useSelector((state) => state.evm)
 
   return (
-    <div 
-    className="bg-mybg-light dark:bg-mybg-dark"
-    >
+    <div className="bg-mybg-light dark:bg-mybg-dark">
       <div className=" bg-cover min-h-screen flex flex-col">
         <Head />
         <Header />

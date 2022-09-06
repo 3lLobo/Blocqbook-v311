@@ -6,7 +6,9 @@ import { setContacts, setSyncedCeramic } from '../../app/contactSlice'
 import { useCallback, useEffect, useRef } from 'react'
 import ProfileModal from '../../components/ProfileModal'
 import GithubFooter from '../../components/GithubFooter'
+// import Image from 'next/image'
 import { useLazyGetAllTokenBalancesQuery } from '../../app/covApi'
+import { skipToken } from '@reduxjs/toolkit/dist/query'
 
 const Profile = () => {
   // This is the entrypoint to the users database.
@@ -23,7 +25,11 @@ const Profile = () => {
     console.log('Ceramic record: ', record)
     if (!store.hasInitialRecord && evmStore.connected && !record.isLoading) {
       console.log('Ceramic record loaded!')
-      covTrigger({ address: store.address }, true)
+      const address = evmStore.account
+      covTrigger( address 
+        ? { address }
+        : skipToken
+        , true)
       dispatch(
         setContacts({
           // contacts: myContacts,
@@ -60,13 +66,13 @@ const Profile = () => {
       </div>
       <div
         // TODO: position the image.
-        className="absolute bottom-0 md:w-64 mb-0 flex flex-col z-0"
+        className="absolute bottom-0 md:w-64 mb-0 flex-col z-0 hidden md:flex"
       >
         <div className="relative w-20 aspect-1 mx-auto dark:hidden">
           <img
+            layout="fill"
             alt="pbLogo"
-            src={"./blocqBookLogo/icon/blocqbookTransparent2.png"}
-            // src={require("./blocqBookLogo/icon/blocqbookTransparent2.png")}
+            src="/blocqBookLogo/icon/blocqbookTransparent2.png"
           />
         </div>
         <GithubFooter />
