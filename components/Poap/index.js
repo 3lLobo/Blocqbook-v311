@@ -14,7 +14,6 @@ export const PoapAvatar = ({ poapData, isCommon }) => {
           <Link href={poapData.event.event_url}>
             <img
               className="rounded-full bg-indigo-400 dark:bg-neonPurple"
-              
               src={poapData.event.image_url}
               alt="avatar"
               title={poapData.event.name}

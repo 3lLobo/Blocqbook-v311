@@ -138,7 +138,7 @@ export default function Header() {
             >
               {!store.connected && (
                 <div className="relative flex col-span-1 h-6 w-6 rounded-full ml-1">
-                  <img alt="metamask"  src="/metamask.png" />
+                  <img alt="metamask" src="/metamask.png" />
                 </div>
               )}
             </MyButton>

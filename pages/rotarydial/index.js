@@ -26,10 +26,7 @@ const Profile = () => {
     if (!store.hasInitialRecord && evmStore.connected && !record.isLoading) {
       console.log('Ceramic record loaded!')
       const address = evmStore.account
-      covTrigger( address 
-        ? { address }
-        : skipToken
-        , true)
+      covTrigger(address ? { address } : skipToken, true)
       dispatch(
         setContacts({
           // contacts: myContacts,
@@ -70,7 +67,6 @@ const Profile = () => {
       >
         <div className="relative w-20 aspect-1 mx-auto dark:hidden">
           <img
-            
             alt="pbLogo"
             src="/blocqBookLogo/icon/blocqbookTransparent2.png"
           />

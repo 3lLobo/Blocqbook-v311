@@ -37,12 +37,7 @@ export function CoinBalance({ item, quote_currency }) {
       <div
         className={`relative w-6 h-6 aspect-1 items-center justify-center flex flex-grow my-1`}
       >
-        <img
-          className="rounded-full  "
-          
-          src={logo_url}
-          alt={contract_name}
-        />
+        <img className="rounded-full  " src={logo_url} alt={contract_name} />
       </div>
       <div className="col-span-2">
         <div className=" grid grid-cols-2 space-x-1">

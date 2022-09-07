@@ -96,12 +96,7 @@ const ProfileCard = ({ profile }) => {
           className="fixed ml-32 justify-start items-start h-fit z-0 w-full mb-3 gap-y-3 flex flex-col "
         >
           <div className="relative ml-2 h-16 scale-300 mb-11 aspect-1 dark:hue-rotate-180 dark:invert ">
-            <img
-              className=""
-              
-              src="/poap-badge.png"
-              alt="poapbadge"
-            />
+            <img className="" src="/poap-badge.png" alt="poapbadge" />
           </div>
           {!poapLoading ? (
             poapData.map((poap) => {
