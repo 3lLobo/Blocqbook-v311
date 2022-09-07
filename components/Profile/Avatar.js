@@ -11,7 +11,7 @@ export function Avatar({ src, scale }) {
     <div className={`relative aspect-1 w-full h-full`}>
       <img
         className="rounded-full bg-indigo-400 dark:bg-neonPurple"
-        layout="fill"
+        
         // TODO: change to animated gif
         src={saveSrc || '/logov2/bbLogo.gif'}
         // src={saveSrc || '/blocqBookLogo/icon/blocqbookTransparent2.png'}
