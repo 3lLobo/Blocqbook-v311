@@ -98,7 +98,7 @@ const ProfileCard = ({ profile }) => {
           <div className="relative ml-2 h-16 scale-300 mb-11 aspect-1 dark:hue-rotate-180 dark:invert ">
             <img
               className=""
-              layout="fill"
+              
               src="/poap-badge.png"
               alt="poapbadge"
             />

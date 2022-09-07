@@ -84,7 +84,7 @@ export const Slice = ({ contact }) => {
               >
                 <img
                   className=""
-                  layout="fill"
+                  
                   src="/poap-badge.png"
                   alt="poapbadge"
                   title="This contact has POAPs."

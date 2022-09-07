@@ -39,7 +39,7 @@ export function CoinBalance({ item, quote_currency }) {
       >
         <img
           className="rounded-full  "
-          layout="fill"
+          
           src={logo_url}
           alt={contract_name}
         />

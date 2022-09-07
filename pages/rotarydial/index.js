@@ -70,7 +70,7 @@ const Profile = () => {
       >
         <div className="relative w-20 aspect-1 mx-auto dark:hidden">
           <img
-            layout="fill"
+            
             alt="pbLogo"
             src="/blocqBookLogo/icon/blocqbookTransparent2.png"
           />
