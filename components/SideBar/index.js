@@ -1,5 +1,5 @@
 import { Link } from 'next/link'
-import { Tab, Fragment } from '@headlessui/react'
+import { Tab } from '@headlessui/react'
 import Header from '../Header'
 import {
   BellIcon,
@@ -8,7 +8,7 @@ import {
   SearchIcon,
 } from '@heroicons/react/solid'
 import { Transactions } from '../Transactions'
-import { useState } from 'react'
+import { useState, Fragment } from 'react'
 import { ContactSlices } from '../ContactSlices'
 import FileTransfer from '../FileTransfer'
 import Messenger from '../Messenger'
@@ -30,7 +30,7 @@ const Sidebar = () => {
 
   const [mobileMenu, setMobileMenu] = useState(false)
   function toggleMobileMenu() {
-    console.log("Mobile: ", mobileMenu)
+    console.log('Mobile: ', mobileMenu)
     setMobileMenu((prevState) => !prevState)
   }
 
@@ -120,7 +120,14 @@ const Sidebar = () => {
         selectedIndex={navStore.openTab}
         onChange={onTabChange}
       >
-        <div className={mobileMenu ? "flex" : "hidden" + " md:flex md:w-64 md:flex-col md:fixed h-full backdrop-blur-xl backdrop-brightness-50 "}>
+        <div
+          className={
+            mobileMenu
+              ? 'flex'
+              : 'hidden' +
+                ' md:flex md:w-64 md:flex-col md:fixed h-full backdrop-blur-xl backdrop-brightness-50 '
+          }
+        >
           <div className="flex-1 flex flex-col min-h-0 bg-indigo-100 shadow-lg dark:bg-[#0E0026] ">
             <div className="flex items-center h-16 flex-shrink-0">
               <Header />
@@ -151,7 +158,7 @@ const Sidebar = () => {
           </div>
         </div>
         <div className="md:pl-64 flex flex-col ">
-          {([0, 1,].includes(navStore.openTab) && !mobileMenu) && (
+          {[0, 1].includes(navStore.openTab) && !mobileMenu && (
             <div className=" mx-6  rounded-2xl sticky top-2 flex-shrink-0 flex h-11 bg-transparent backdrop-blur-md dark:backdrop-brightness-150 shadow-2xl z-30">
               <button
                 type="button"
