@@ -1,6 +1,6 @@
 ![bbbanner](/public/logov2/booqName/blocqbookN.png)
 
-# PolygonBUIDL
+# Blocqbook
 
 The blocq☎️book v3. We skip v2 cuz even numbers are boring!
 
@@ -20,7 +20,7 @@ TL;DR: The Blocq☎️book:
     2. File storage and `#W3btransition`
     3. transfer with 1TB soft limit 🧑🏾‍🚀 `#W3btransition`
 
-IPFS/Spheron dcntrlzd app: https://polygonbuidl-y8q1s2.spheron.app/
+IPFS/Filecoin dcntrlzd app: https://polygonbuidl-y8q1s2.spheron.app/
 Centralized (fallbacq): https://blocqbook.netlify.app/
 
 ## A booq, What is that even?
@@ -64,13 +64,6 @@ Decentralized file transfer and storage is empowered by Web3storage with a gener
 To top the cherry, the UI is deployed via Spheron on the Filecoin network, keeping it out of reach of censoring or capitalizing hands 👋🏾
 In other words: Neither the Blocq☎️book, nor your personal web3-contact-DB can be taken down, you better start using it!
 
-## AWS, A tiny dash of good old centralization
-
-As much as we all would like to live in Ponyland, reality usually teaches us hard facts.
-Through all their perks, we could not yet find a way to decentralize a secure backend.
-Storing wallet keys on a static website would open the door for malicious actors to abuse both the storage and public tagging system.
-In necessity of a secure backend, we turned to AWS where the Blocq☎️book API is deployed.
-
-Being thankful implies having successfully surpassed a challenge, thus with this metaphor in mind we would like to round up this hackathon with a big **ThankYou** to the the generous sponsors IPFS, AWS and Polygon 💜
+Being thankful implies having successfully surpassed a challenge, thus with this metaphor in mind we would like to round up this hackathon with a big **ThankYou** to the the generous sponsors IPFS and Polygon 💜
 
 ![bbbye](/public/logov2/booqName/blocqbookN.png)
